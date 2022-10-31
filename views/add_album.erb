@@ -1,0 +1,46 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Add an Album</h1>
+
+<p>  Please add the details of the album you would like to add:
+    </p>
+
+<form action="/albums" method="POST">
+  <label> Title: </label> <input type="text" name="title"><br>
+  <label> Release Year: </label><input type="text" name="release_year"><br>
+  <label> Artist ID: </label><input type="int" name="artist_id">
+  
+  <input type="submit" value="Submit">
+  <%# <input type="submit" /> %>
+  </form>
+
+
+<!--  <label> Artist:</label>
+        <select id="list" onchange="getSelectValue();">
+            <% @artists.each do |artist| %>
+                <option value="<%= artist.id %>"><%= artist.name %></option>
+            <% end %>
+        </select>
+
+<script>
+    function getSelectValue()
+    {
+      var selectedValue = document.getElementById("list").value;
+      console.log(selectedValue);
+    }
+</script>
+-->
+ 
+
+<!-- <p>  Artist not present? <a href="/add_artist">Add a new Artist before continuing.</a>
+    </p>
+ -->
+<p>  Need to find an Artist ID? <a href="/artists">Go to Artists page.</a>
+    </p>
+
+<p>
+  <a href="/">Go to Homepage</a> 
+  </p>
+</html>
+

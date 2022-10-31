@@ -1,0 +1,27 @@
+<!-- GET /albums -->
+
+<html>
+  <head></head>
+  <body>
+    <h1>Albums</h1>
+
+    <div>
+    <% @albums.each do |album| %>
+        <p>
+        <a href="/albums/<%=album.id%>"><%= album.title %></a><br>
+        <%# Released: <%= album.release_year<br> %> 
+        
+        </p>
+    <% end %>
+    </div>
+
+ <p><br>
+  <a href="/add_album">Add a new Album</a> 
+  </p>
+
+ <p><br>
+  <a href="/">Go to Homepage</a> 
+  </p>
+
+  </body>
+</html>
